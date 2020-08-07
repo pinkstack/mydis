@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter> -->
+        <encoder>
+            <!-- <pattern>%-5level [%thread] %d{HH:mm:ss.SSS} %logger{15} - %msg%n%rEx</pattern> -->
+            <!-- <pattern>%date{yyyy-MM-dd} %X{akkaTimestamp} %-5level[%thread] %logger{1} - %msg%n</pattern> -->
+            <!-- <pattern>%-5level %logger{36}: %msg%n</pattern> -->
+            <!-- <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %class{36}.%M %L - %msg%n</pattern> -->
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="akka" level="DEBUG"/>
+    <logger name="com.zaxxer" level="INFO"/>
+    <logger name="com.pinkstack.mydis" level="DEBUG" />
+
+    <!--
+    <logger name="akka" level="${AKKA_LOG_LEVEL:-INFO}" />
+    <logger name="oshi.util" level="INFO" />
+    -->
+
+    <root level="DEBUG">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>
