@@ -1,7 +1,8 @@
 # mydis
 
-[![](https://images.microbadger.com/badges/image/pinkstack/mydis.svg)](https://microbadger.com/images/pinkstack/mydis "Get your own image badge on microbadger.com")
-[![](https://images.microbadger.com/badges/version/pinkstack/mydis.svg)](https://microbadger.com/images/pinkstack/mydis "Get your own version badge on microbadger.com")
+![Docker Pulls](https://img.shields.io/docker/pulls/pinkstack/mydis "Number of image pulls")
+[![Docker Layers](https://images.microbadger.com/badges/image/pinkstack/mydis.svg)](https://microbadger.com/images/pinkstack/mydis "Docker Layers")
+[![Docker Image version](https://images.microbadger.com/badges/version/pinkstack/mydis.svg)](https://microbadger.com/images/pinkstack/mydis "Docker Image Version")
 
 [mydis] is remote dictionary server, an in-memory data structure with optional durability. 
 Some might say that [mydis][mydis] is a [Redis] clone written in [Scala] on 
@@ -26,7 +27,7 @@ Options and flags:
 mydis is distributed as "fatjar" or Docker image. To run one or the other use following commands.
 
 ```base
-docker run -p 8080:6667 pinkstack/mydis
+docker run -p 6667:6667 pinkstack/mydis
 ```
 
 Or use the jar
@@ -105,7 +106,9 @@ redis-benchmark -p 8080 -t set,get,del,ping -n 10000 -c 5 --csv
 
 ## Author
 
-- [Oto Brglez][otobrglez]
+- [Oto Brglez][otobrglez] 
+
+![Twitter Follow](https://img.shields.io/twitter/follow/otobrglez?style=social)
 
 [Redis]: https://redis.io/
 [Mydis]: https://github.com/otobrglez/mydis
