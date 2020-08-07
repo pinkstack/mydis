@@ -112,7 +112,7 @@ redis-benchmark -p 8080 -t set,get,del,ping -n 10000 -c 5 --csv
 ![Twitter Follow](https://img.shields.io/twitter/follow/otobrglez?style=social)
 
 [Redis]: https://redis.io/
-[Mydis]: https://github.com/otobrglez/mydis
+[mydis]: https://github.com/pinkstack/mydis
 [otobrglez]: https://github.com/otobrglez
 [Scala]: https://www.scala-lang.org/
 [netcat]: https://en.wikipedia.org/wiki/Netcat
