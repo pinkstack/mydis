@@ -61,6 +61,7 @@ redis-cli -p 6667 echo "Hello world\!"
 redis-cli -p 6667 set name "Oto Brglez"
 redis-cli -p 6667 strlen name
 redis-cli -p 6667 get name
+redis-cli -p 6667 del name
 ```
 
 Via [RESP protocol][resp] and [netcat]:
