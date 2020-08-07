@@ -10,7 +10,7 @@ lazy val mydis = (project in file("."))
   .settings(sharedSettings: _*)
   .settings(
     name := "mydis",
-    version := "0.1",
+    version := "0.2",
     libraryDependencies ++= Seq(
       D.fp,
       D.atto,
@@ -35,7 +35,7 @@ lazy val mydis = (project in file("."))
     dockerCommands := dockerCommands.value.flatMap {
       case add @ Cmd("RUN", args @ _*) if args.contains("id") =>
         List(
-          Cmd("RUN", "apk add --no-cache bash jq curl"),
+          Cmd("RUN", "apk add --no-cache bash"),
           Cmd("ENV", "SBT_VERSION", sbtVersion.value),
           Cmd("ENV", "SCALA_VERSION", scalaVersion.value),
           Cmd("ENV", "MYDIS_VERSION", version.value),
