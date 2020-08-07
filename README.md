@@ -1,5 +1,8 @@
 # mydis
 
+[![](https://images.microbadger.com/badges/image/pinkstack/mydis.svg)](https://microbadger.com/images/pinkstack/mydis "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/pinkstack/mydis.svg)](https://microbadger.com/images/pinkstack/mydis "Get your own version badge on microbadger.com")
+
 [mydis] is remote dictionary server, an in-memory data structure with optional durability. 
 Some might say that [mydis][mydis] is a [Redis] clone written in [Scala] on 
 top of [Akka][akka-streams], and they would be right.
