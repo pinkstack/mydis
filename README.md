@@ -1,8 +1,6 @@
 # mydis
 
 ![Docker Pulls](https://img.shields.io/docker/pulls/pinkstack/mydis "Number of image pulls")
-[![Docker Layers](https://images.microbadger.com/badges/image/pinkstack/mydis.svg)](https://microbadger.com/images/pinkstack/mydis "Docker Layers")
-[![Docker Image version](https://images.microbadger.com/badges/version/pinkstack/mydis.svg)](https://microbadger.com/images/pinkstack/mydis "Docker Image Version")
 
 [mydis] is remote dictionary server, an in-memory data structure with optional durability. 
 Some might say that [mydis][mydis] is a [Redis] clone written in [Scala] on 
