@@ -13,6 +13,7 @@ lazy val mydis = (project in file("."))
     version := "0.2",
     libraryDependencies ++= Seq(
       D.fp,
+      D.shapeless,
       D.atto,
       D.akka,
       D.configuration,
@@ -33,7 +34,7 @@ lazy val mydis = (project in file("."))
     dockerAliases ++= Seq(dockerAlias.value.withTag(Option("latest"))),
     dockerExposedPorts ++= Seq(6667),
     dockerCommands := dockerCommands.value.flatMap {
-      case add @ Cmd("RUN", args @ _*) if args.contains("id") =>
+      case add@Cmd("RUN", args@_*) if args.contains("id") =>
         List(
           Cmd("RUN", "apk add --no-cache bash"),
           Cmd("ENV", "SBT_VERSION", sbtVersion.value),

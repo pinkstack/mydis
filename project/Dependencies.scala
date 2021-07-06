@@ -14,6 +14,7 @@ object Dependencies {
     val AkkaSlf4j: Version = "2.6.8"
     val Atto: Version = "0.7.0"
     val ScalaTest: Version = "3.2.0"
+    val Shapeless: Version = "2.3.3"
   }
 
   object D {
@@ -31,6 +32,10 @@ object Dependencies {
     lazy val fp: Seq[ModuleID] = Seq(
       "org.typelevel" %% "cats-core" % V.Cats,
       "org.typelevel" %% "cats-effect" % V.CatsEffect
+    )
+
+    lazy val shapeless: Seq[ModuleID] = Seq(
+      "com.chuusai" %% "shapeless" % V.Shapeless,
     )
 
     lazy val cli: Seq[ModuleID] = Seq(
@@ -53,4 +58,5 @@ object Dependencies {
       "org.scalatest" %% "scalatest-shouldmatchers" % V.ScalaTest % "test"
     )
   }
+
 }

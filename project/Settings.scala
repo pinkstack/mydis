@@ -21,6 +21,8 @@ object Settings {
     ),
     resolvers ++= Seq(
       Resolver.bintrayRepo("ovotech", "maven"),
+      Resolver.sonatypeRepo("releases"),
+      Resolver.sonatypeRepo("snapshots"),
       "Confluent Maven Repository" at "https://packages.confluent.io/maven/",
       "jitpack" at "https://jitpack.io"
     )

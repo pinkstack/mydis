@@ -94,6 +94,9 @@ echo -e '*1\r\n$4\r\nPING\r\n' | nc localhost 6667
 - [(source) sixsigmapymes/akkaLab](https://github.com/sixsigmapymes/akkaLab/blob/master/akka-docs/src/test/scala/docs/stream/operators/flow/FromSinkAndSource.scala)
 - [A simple way to write parsers: using the State monad. By Stéphane Derosiaux](https://www.sderosiaux.com/articles/2018/06/15/a-simple-way-to-write-parsers-using-the-state-monad/)
 
+- [Demystifying Type Class derivation with Shapeless](https://www.slideshare.net/ssuserf35af4/demystifying-type-class-derivation-with-shapeless)
+- [Type classes and generic derivation](https://meta.plasm.us/posts/2015/11/08/type-classes-and-generic-derivation/)
+
 ## Benchmarking
 
 Please understand that mydis is highly experimental project and is not meant to be 
